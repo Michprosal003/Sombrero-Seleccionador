@@ -1,0 +1,241 @@
+/* General Reset */
+body, h1, p, form, button, input {
+    margin: 0;
+    padding: 0;
+    font-family: 'Garamond', serif;
+}
+
+body {
+    background-color: #f0e6d6; /* Color de fondo suave */
+    color: #333;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #4e3a2a; /* Color de fondo oscuro */
+    color: #f5f5f5; /* Color del texto */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px; /* Espaciado adicional */
+}
+
+h1 {
+    font-size: 3em; /* Aumenta el tamaño del título */
+    animation: fadeIn 2s ease-in-out; /* Animación de desvanecimiento */
+}
+
+/* Contenedor principal */
+main {
+    background-color: #fff; /* Color de fondo de reserva */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    max-width: 800px;
+    margin: 20px auto;
+    background-image: url(''); /* Cambia esto por la URL de tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Contenedor de la imagen del sombrero */
+#hat-section {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#hat-section img {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #4e3a2a;
+}
+
+/* Botones y campos de texto */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: 1px solid #d0b59c;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+input[type="text"]::placeholder {
+    text-align: center;
+}
+
+button {
+    background-color: #4e3a2a;
+    color: #f5f5f5;
+    border: none;
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    width: 100%;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #6f4f28;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    input[type="text"], button {
+        font-size: 1em;
+        padding: 8px;
+    }
+}
+
+/* Media Queries para tabletas */
+@media (max-width: 900px) and (min-width: 601px) {
+    header h1 {
+        font-size: 2.8em;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    input[type="text"], button {
+        font-size: 1.1em;
+        padding: 10px;
+    }
+}
+
+/* Estilos específicos para el cuestionario */
+#quiz-form {
+    margin-top: 20px;
+}
+
+.question {
+    background-color: #fff;
+    border: 1px solid #d0b59c;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.question h3 {
+    font-size: 1.6em;
+    color: #4e3a2a;
+    margin-bottom: 10px;
+}
+
+.question label {
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #e9e9e9;
+    margin: 8px 0;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+.question input[type="radio"] {
+    margin-right: 10px;
+}
+
+.question label:hover {
+    background-color: #d1d1d1;
+}
+
+/* Sección de resultados */
+#result-section {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#result-image {
+    width: 150px;
+    height: auto;
+    margin-top: 20px;
+}
+
+#restart-quiz-btn {
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    text-align: center;
+}
+
+#restart-quiz-btn:hover {
+    background-color: #ffb700;
+}
+
+/* Estilo para el pie de página */
+#footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+/* Espaciado adicional entre botones */
+#retry-quiz-btn, #restart-quiz-btn {
+    margin-bottom: 10px;
+    display: block;
+    width: 200px;
+    margin: 10px auto;
+}
+
+/* Contenedor de imágenes centrado */
+#images-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#images-container img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Animación de desvanecimiento para el título */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

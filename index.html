@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario del Sombrero Seleccionador</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sección del Sombrero Seleccionador -->
+    <div id="hat-section" class="section">
+        <img id="hat-image" src="Sombrero.png" alt="Sombrero Seleccionador">
+        <button id="hat-btn">¡Haz clic aquí para ser seleccionado!</button>
+    </div>
+
+    <!-- Sección para ingresar el nombre -->
+    <div id="dialogue-section" class="section" style="display:none;">
+        <h2>Hola, ¿cuál es tu nombre?</h2>
+        <input type="text" id="name-input">
+        <button id="name-submit-btn">Enviar</button>
+    </div>
+
+    <!-- Sección de bienvenida -->
+    <div id="welcome-section" class="section" style="display:none;">
+        <h2 id="welcome-text"></h2>
+        <button id="start-quiz-btn">Comenzar el cuestionario</button>
+    </div>
+
+    <!-- Sección del cuestionario -->
+    <div id="quiz-section" class="section" style="display:none;">
+        <form id="quiz-form"></form>
+        <div id="timer">25</div>
+        <img id="time-up-image" src="time-up.png" alt="Tiempo agotado" style="display:none;">
+        <button id="submit-quiz-btn">Enviar cuestionario</button>
+        <button id="retry-quiz-btn" style="display:none;">Intentar de nuevo</button>
+    </div>
+
+    <!-- Sección del resultado -->
+    <div id="result-section" class="section" style="display:none;">
+        <h2 id="result-text"></h2>
+        <img id="result-image" src="" alt="Resultado" style="display:none;">
+        <button id="house-button" style="display:none;"></button>
+      
+        <button id="thank-you-btn">Gracias</button>
+    </div>
+    
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Programador Michel Rosales. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+<style>
+
+
+    /* Estilos para el pie de página */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f1f1f1; /* Puedes cambiar el color de fondo si lo deseas */
+    border-top: 1px solid #ddd; /* Agrega una línea superior para separar del contenido */
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px; /* Ajusta el tamaño de la fuente si lo deseas */
+    color: #333; /* Cambia el color del texto si lo prefieres */
+}
+
+/* Estilos para la sección del cuestionario */
+#quiz-section {
+    padding-bottom: 60px; /* Espacio suficiente para el pie de página */
+}
+
+/* Espacio adicional para el botón de enviar cuestionario */
+#submit-quiz-btn {
+    margin-bottom: 20px; /* Ajusta el margen inferior según sea necesario */
+}
+
+/* Estilos para la sección de resultados */
+#result-section {
+    padding-bottom: 80px; /* Espacio suficiente para el pie de página */
+}
+
+/* Estilos para los botones en la sección de resultados */
+#result-section button {
+    display: block;
+    margin: 10px auto; /* Centra los botones y agrega un margen superior e inferior */
+}
+
+#go-to-page-btn {
+    margin-bottom: 20px; /* Ajusta el margen inferior para separar del botón "Gracias" */
+}
+
+</style>
+

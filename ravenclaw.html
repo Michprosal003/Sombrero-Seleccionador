@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ravenclaw</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Asegúrate de tener un archivo styles.css -->
+    <style>
+        /* Estilos generales */
+        body {
+            background-image: url('Ravenclaw-4.jpg'); /* Ruta de tu imagen de alta resolución */
+            background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+            background-position: center; /* Centra la imagen en el fondo */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            color: #fff; /* Color del texto en blanco para mejor contraste */
+            font-family: 'Arial', sans-serif; /* Fuente legible para el texto */
+            margin: 0; /* Elimina márgenes por defecto del body */
+            padding: 0; /* Elimina padding por defecto del body */
+            overflow: hidden; /* Evita barras de desplazamiento innecesarias */
+        }
+
+        .content {
+            text-align: center; /* Centra el texto en la página */
+            padding: 20px; /* Espacio alrededor del contenido */
+            background: rgba(0, 0, 0, 0.6); /* Fondo semitransparente para mejorar la legibilidad */
+            border-radius: 10px; /* Bordes redondeados */
+            max-width: 90%; /* Limita el ancho del contenedor en porcentajes para adaptarse a pantallas más pequeñas */
+            margin: 100px auto; /* Espacio arriba y abajo, y centra el contenedor */
+        }
+
+        h1, p, a {
+            margin: 0; /* Elimina márgenes por defecto */
+            padding: 10px; /* Añade espacio alrededor del texto */
+        }
+
+        h1 {
+            font-size: 2.5em; /* Tamaño grande para el título, ajustado para móviles */
+            margin-bottom: 20px; /* Espacio debajo del título */
+        }
+
+        p {
+            font-size: 1.2em; /* Tamaño de fuente para el párrafo, ajustado para móviles */
+            margin-bottom: 20px; /* Espacio debajo del párrafo */
+        }
+
+        a {
+            font-size: 1.2em; /* Tamaño de fuente para el enlace */
+            color: white; /* Color azul oscuro para el enlace, compatible con los colores de Ravenclaw */
+            text-decoration: none; /* Elimina el subrayado del enlace */
+        }
+
+        a:hover {
+            text-decoration: underline; /* Subraya el enlace al pasar el cursor */
+        }
+
+        /* Ajustes para móviles */
+        @media (max-width: 600px) {
+            .content {
+                margin: 50px auto; /* Reduce el margen superior e inferior en dispositivos móviles */
+                padding: 10px; /* Reduce el padding en dispositivos móviles */
+            }
+
+            h1 {
+                font-size: 2em; /* Tamaño de fuente ajustado para móviles */
+            }
+
+            p {
+                font-size: 1em; /* Tamaño de fuente ajustado para móviles */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>¡Bienvenido a Ravenclaw!</h1>
+        <p>Has sido seleccionado para la casa Ravenclaw.</p>
+        <a href="index.html">Regresar al inicio</a>
+    </div>
+</body>
+</html>
+
